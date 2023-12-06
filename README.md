@@ -51,7 +51,7 @@ node database.js
 
 ### 6. Run the Application
 Start the frontend and backend:
-Backend
+
 ```bash
 npm start
 ```
