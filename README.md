@@ -27,10 +27,9 @@ cd resume-frontend
 npm install
 ```
 ### 3.Import SQL Data into MySQL Database
-Open MYSQL Workbench and connect to your MySQL server.
-Create a new database named resume_db.
-Open backend/sql-scripts/resume_db.sql file.
-Copy the SQL queries from the file and execute them in MYSQL Workbench to populate the database.
+- Open MYSQL Workbench and connect to your MySQL server.
+- Import data using Server-> Data Import .
+- Open backend/sql-scripts/resume_db.sql file.
 
 ### 4.Configure Database Connection (Optional)
 Open backend/server.js and update the MySQL database connection details.
