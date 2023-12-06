@@ -40,7 +40,8 @@ database: 'resume_db',
 
 ### 4.Build and Run Docker Container (Optional)
 ```bash
-docker run -d --name resume-mysql -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 mysql:latest
+docker-compose build
+docker-compose up -d
 ```
 
 ### 5. Run the Application
