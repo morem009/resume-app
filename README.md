@@ -26,8 +26,13 @@ npm install
 cd resume-frontend
 npm install
 ```
+### 3.Import SQL Data into MySQL Database
+Open MYSQL Workbench and connect to your MySQL server.
+Create a new database named resume_db.
+Open backend/sql-scripts/resume_db.sql file.
+Copy the SQL queries from the file and execute them in MYSQL Workbench to populate the database.
 
-### 3.Configure Database Connection (Optional)
+### 4.Configure Database Connection (Optional)
 Open backend/server.js and update the MySQL database connection details.
 ```bash
 const db = mysql.createConnection({
@@ -38,13 +43,13 @@ database: 'resume_db',
 });
 ```
 
-### 4.Build and Run Docker Container (Optional)
+### 5.Build and Run Docker Container (Optional)
 ```bash
 docker-compose build
 docker-compose up -d
 ```
 
-### 5. Run the Application
+### 6. Run the Application
 Start the frontend and backend:
 
 ```bash
