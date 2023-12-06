@@ -20,11 +20,10 @@ cd resume-app
 
 ### 2. Install Dependencies
 ```bash
-cd resume-frontend
 npm install
 ```
 ```bash
-cd ..
+cd resume-frontend
 npm install
 ```
 
