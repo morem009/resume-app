@@ -8,7 +8,7 @@ Before you begin, ensure you have the following installed:
 
 - [Node.js](https://nodejs.org/)
 - [Docker](https://www.docker.com/) (if using Docker for MySQL)
-
+- [MYSQLWorkBench](https://dev.mysql.com/downloads/)
 ## Setup Instructions
 
 ### 1. Clone the Repository
