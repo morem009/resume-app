@@ -1,0 +1,13 @@
+# Use the official MySQL image
+FROM mysql:latest
+
+# Set the root password
+ENV MYSQL_ROOT_PASSWORD=root
+
+# Create a new database and user
+ENV MYSQL_DATABASE=resume_db
+ENV MYSQL_USER=resume_user
+ENV MYSQL_PASSWORD=resume_password
+
+# Copy SQL dump into the container
+COPY resume_db_resumes.sql /docker-entrypoint-initdb.d/
