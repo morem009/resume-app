@@ -24,7 +24,7 @@ cd resume-frontend
 npm install
 ```
 ```bash
-cd ../backend
+cd ..
 npm install
 ```
 
