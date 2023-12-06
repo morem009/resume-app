@@ -30,6 +30,9 @@ npm install
 - Open MYSQL Workbench and connect to your MySQL server.
 - Import data using Server-> Data Import .
 - Open backend/sql-scripts/resume_db.sql file.
+```bash
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
+```
 
 ### 4.Configure Database Connection (Optional)
 Open backend/server.js and update the MySQL database connection details.
