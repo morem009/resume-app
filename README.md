@@ -27,12 +27,14 @@ npm install
 
 ### 3.Configure Database Connection
 Open backend/server.js and update the MySQL database connection details.
-- const db = mysql.createConnection({
-- host: 'resume-mysql',  // Docker container name or 'localhost' for local machine
--  user: 'root',
--  password: 'root',
--  database: 'resume_db',
-- });
+```bash
+const db = mysql.createConnection({
+host: 'resume-mysql',  // Docker container name or 'localhost' for local machine
+user: 'root',
+password: 'root',
+database: 'resume_db',
+});
+```
 
 ### 4.Build and Run Docker Container (Optional)
 docker run -d --name resume-mysql -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 mysql:latest
