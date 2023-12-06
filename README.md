@@ -19,11 +19,14 @@ cd resume-app
 ```
 
 ### 2. Install Dependencies
-cd frontend
+```bash
+cd resume-frontend
 npm install
-
+```
+```bash
 cd ../backend
 npm install
+```
 
 ### 3.Configure Database Connection
 Open backend/server.js and update the MySQL database connection details.
