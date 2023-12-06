@@ -27,7 +27,7 @@ cd resume-frontend
 npm install
 ```
 
-### 3.Configure Database Connection
+### 3.Configure Database Connection (Optional)
 Open backend/server.js and update the MySQL database connection details.
 ```bash
 const db = mysql.createConnection({
