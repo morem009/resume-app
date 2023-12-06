@@ -11,14 +11,14 @@ app.use(cors());
 
 app.use(bodyParser.json());
 
-const connection = mysql.createConnection({
-  host: 'resume-mysql', 
+const db = mysql.createConnection({
+  host: 'localhost', 
   user: 'root',
   password: 'root',
   database: 'resume_db',
 });
 
-connection.connect((err) => {
+db.connect((err) => {
   if (err) {
     console.error('Error connecting to MySQL:', err.message);
   } else {
