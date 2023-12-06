@@ -14,7 +14,7 @@ Before you begin, ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/morem009/resume-app.git
+git clone -b master --single-branch https://github.com/morem009/resume-app.git
 cd resume-app
 ```
 
