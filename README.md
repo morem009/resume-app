@@ -43,13 +43,7 @@ database: 'resume_db',
 docker run -d --name resume-mysql -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 mysql:latest
 ```
 
-### 5. Populate the Database
-Run the application to add sample resumes to the database:
-```bash
-node database.js
-```
-
-### 6. Run the Application
+### 5. Run the Application
 Start the frontend and backend:
 
 ```bash
