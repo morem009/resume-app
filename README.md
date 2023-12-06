@@ -8,7 +8,7 @@ Before you begin, ensure you have the following installed:
 
 - [Node.js](https://nodejs.org/)
 - [Docker](https://www.docker.com/) (if using Docker for MySQL)
-
+- [MYSQLWorkBench](https://dev.mysql.com/downloads/)
 ## Setup Instructions
 
 ### 1. Clone the Repository
@@ -26,8 +26,15 @@ npm install
 cd resume-frontend
 npm install
 ```
+### 3.Import SQL Data into MySQL Database
+- Open MYSQL Workbench and connect to your MySQL server.
+- Import data using Server-> Data Import .
+- Open backend/sql-scripts/resume_db.sql file.
+```bash
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
+```
 
-### 3.Configure Database Connection (Optional)
+### 4.Configure Database Connection (Optional)
 Open backend/server.js and update the MySQL database connection details.
 ```bash
 const db = mysql.createConnection({
@@ -38,13 +45,13 @@ database: 'resume_db',
 });
 ```
 
-### 4.Build and Run Docker Container (Optional)
+### 5.Build and Run Docker Container (Optional)
 ```bash
 docker-compose build
 docker-compose up -d
 ```
 
-### 5. Run the Application
+### 6. Run the Application
 Start the frontend and backend:
 
 ```bash
