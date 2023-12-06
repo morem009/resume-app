@@ -35,3 +35,24 @@ const db = mysql.createConnection({
 });
 
 ### 4.Build and Run Docker Container (Optional)
+docker run -d --name resume-mysql -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 mysql:latest
+
+### 5. Populate the Database
+Run the application to add sample resumes to the database:
+cd backend
+node database.js
+
+### 6. Run the Application
+Start the frontend and backend:
+cd frontend
+npm start
+
+cd ../backend
+npm start
+
+### Usage
+Retrieve resume details by ID or name.
+Add new resumes.
+
+### Issues
+If you encounter any issues or have suggestions, please open an issue.
